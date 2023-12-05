@@ -2,50 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        background-color: #f0f0f0; /* Main background color */
-        font-family: Arial, sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-      }
-
-      .form-box {
-        background-color: #ffffff; /* Form box background color */
-        padding: 20px;
-        margin: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        position: relative;
-      }
-
-      .instructions {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        color: #999; /* Initial faded color */
-        transition: color 0.3s ease-out;
-      }
-
-      .form-input:focus + .instructions {
-        color: transparent; /* Fade out when input is focused */
-      }
-    </style>
-    <title>Fading Instructions Form Box</title>
+    <title>FORM BOX</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="form-box">
-      <label for="name" class="instructions">Enter your name:</label>
-      <input type="text" id="name" name="name" class="form-input" required />
-      <br />
-      <label for="email" class="instructions">Enter your email:</label>
-      <input type="email" id="email" name="email" class="form-input" required />
-      <br />
-      <!-- Add more form inputs as needed -->
+    <div class="wrapper">
+      <div class="Form-box">
+        <h1 class="login">Login</h1>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <p>Forgot password&quest;</p>
+          <button type="submit" class="btn">LOGIN</button>
+          <p>
+            <span class="span1">Don't have an account&quest;</span>
+            <a href="forms2.html">signUp</a>
+          </p>
+        </form>
+      </div>
     </div>
   </body>
 </html>
